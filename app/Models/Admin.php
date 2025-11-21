@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-class Admin extends Model
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
+class Admin extends User
 {
+    use HasApiTokens, Notifiable;
     protected $fillable=[
         'name',
         'email',

@@ -40,12 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'users' => [
+        'api_users' => [
             'driver' => 'passport',
             'provider' => 'users',
         ],
         'api_admin' => [
-            'driver' => 'sanctum',
+            'driver' => 'passport',
             'provider' => 'admins',
         ],
     ],
