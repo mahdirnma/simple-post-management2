@@ -6,4 +6,4 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/users/login', UserLoginController::class);
-Route::post('/admins/login', AdminLoginController::class);
+Route::post('/admin/login', AdminLoginController::class);
